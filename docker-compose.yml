@@ -1,0 +1,24 @@
+version: '3.8'
+services: 
+    web-aplication:
+        image: web-user-app:v1
+        stdin_open: true
+        expose: 
+            - 4200
+        ports: 
+            - 4200:4200
+        depends_on: 
+            - api-express
+    api-express:
+        image: api-express:v1
+        stdin_open: true
+        expose: 
+            - 3001
+        ports: 
+            - 3001:3001
+        depends_on: 
+            - mongo
+    mongo:
+        image: mongo
+        ports: 
+            - 27017:27017    

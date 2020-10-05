@@ -1,0 +1,12 @@
+<div class="card mt-2">
+    <div class="card-header">
+      <h5>{{User.nombre}} {{User.ApellidoPaterno}} {{User.ApellidoMaterno}}</h5>  
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">RFC : {{User.RFC}}</h5>
+      <p class="card-text">Fecha de Nacimiento : {{User.FechaNacimiento}}</p>
+      <button class="btn btn-danger" (click)="deleteUser(User._id)">Eliminar</button>
+    </div>
+  </div>
+
+  <router-outlet></router-outlet>

@@ -1,0 +1,13 @@
+<div ngClass="offset-2 col-md-6 mt-2">
+    <form  (submit)="CreateUser()">
+        <input class="form-control form-control-lg mt-2" id="nombre" name="nombre" [(ngModel)]="nombre" type="text" placeholder="Nombre">
+        <input class="form-control form-control-lg mt-2" id="apPaterno" name="apPaterno" [(ngModel)]="apPaterno"  type="text" placeholder="Apellido Paterno">
+        <input class="form-control form-control-lg mt-2" id="apMaterno" name="apMaterno" [(ngModel)]="apMaterno" type="text" placeholder="Apellido Materno">
+        <input class="form-control mt-2" type="text" id="rfc" name="rfc" [(ngModel)]="rfc"  placeholder="RFC">
+        <input class="form-control form-control-sm mt-2" id="fechaNacimiento" name="fechaNacimiento" [(ngModel)]="fechaNacimiento"   type="date" placeholder="fecha de Nacimiento">
+        <button type="submit" class="btn btn-warning mt-2"  style="align-content: center;">Crear Usuario</button>
+    </form>
+
+</div>
+
+<router-outlet></router-outlet>
