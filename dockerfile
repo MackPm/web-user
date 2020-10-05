@@ -1,6 +1,6 @@
 FROM node:12.18.3
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/user-web
 
 COPY package*.json ./
 
@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 4200
 
-CMD ["ng","serve"]
+CMD [ "npm","start" ]

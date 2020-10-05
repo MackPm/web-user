@@ -1,7 +1,7 @@
 version: '3.8'
 services: 
     web-aplication:
-        image: web-user-app:v1
+        image: user-web:v1
         stdin_open: true
         expose: 
             - 4200
@@ -21,4 +21,5 @@ services:
     mongo:
         image: mongo
         ports: 
-            - 27017:27017    
+            - 27017:27017
+        
